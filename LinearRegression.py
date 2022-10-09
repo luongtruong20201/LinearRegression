@@ -58,11 +58,11 @@ for (train_index, val_index) in kfold.split(data_train):
         metrics.mean_squared_error(y_train, y_train_predicted) +
         metrics.mean_squared_error(y_val, y_val_predicted)
     )
-    
+
     if sum_error < MIN:
         MIN = sum_error
         reg = linear
-        
+
 # W: Hệ số hồi quy^^
 # W0: hệ số bias^^
 print("W = ", reg.coef_)
@@ -72,4 +72,4 @@ data_predicted = reg.predict(x_test)
 
 # print(data_predicted)
 # Đánh giá độ chính xác^^
-print(reg.score(x_test, y_test))
+print("^^: ", reg.score(x_test, y_test))
