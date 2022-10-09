@@ -1,4 +1,3 @@
-from statistics import linear_regression
 from sklearn import (
     linear_model,
     metrics,
