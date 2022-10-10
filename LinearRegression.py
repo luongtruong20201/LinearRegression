@@ -31,7 +31,7 @@ y_test = data_test[:, -1:]
 kfold = model_selection.KFold(
     shuffle=False,
     random_state=None,
-    n_splits=3
+    n_splits=5
 )
 
 MIN = 1e1000000000000000000
